@@ -1,7 +1,10 @@
 var Navigation = Router.Navigation;
 
+
+//the flag determine weather you have logged in
 var isRegistering = false;
 
+//render the page for the first time
 var render = function() {
   Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.body);
@@ -9,6 +12,7 @@ var render = function() {
 });
 };
 
+//determine login or register
 var App = React.createClass({
   render: function () {
     console.log('render', accessToken);
@@ -45,6 +49,7 @@ var App = React.createClass({
   }
 });
 
+//login page
 var LogIn = React.createClass({
   handleClick: function() {
     var self = this;
@@ -90,6 +95,8 @@ var LogIn = React.createClass({
   }
 });
 
+
+//register page
 var Register = React.createClass({
   handleClick: function() {
     postSignup(this.state.email, this.state.password)
@@ -135,6 +142,7 @@ var Register = React.createClass({
   }
 });
 
+//The main page of our website after you login
 var Overview = React.createClass({
 
   render: function () {
@@ -146,6 +154,7 @@ var Overview = React.createClass({
   }
 });
 
+//rooms page, in which you can add rooms
 var Rooms = React.createClass({
   handleAddClick: function() {
     var self = this;
@@ -192,6 +201,7 @@ var Rooms = React.createClass({
   }
 });
 
+//room page, in which you can see the detailed information of a room
 var Room = React.createClass({
   mixins: [Router.State],
   handleClick: function() {
@@ -295,6 +305,8 @@ var Room = React.createClass({
           //   return <li key={node.id}><Link to="node" params={node}>{node.name}</Link></li>;
           // })}
 
+
+//nodes page, which you can add nodes 
 var Nodes = React.createClass({
   handleAddClick: function() {
     var self = this;
@@ -342,6 +354,8 @@ var Nodes = React.createClass({
   }
 });
 
+
+//node page
 var Node = React.createClass({
   mixins: [Router.State],
   getInitialState: function() {
@@ -407,6 +421,8 @@ var Node = React.createClass({
   }
 });
 
+
+//notification page
 var Notifications = React.createClass({
   render: function () {
     return (
@@ -415,6 +431,7 @@ var Notifications = React.createClass({
   }
 });
 
+//settings page
 var Settings = React.createClass({
   render: function () {
     return (
@@ -423,6 +440,7 @@ var Settings = React.createClass({
   }
 });
 
+//help page
 var Help = React.createClass({
   render: function () {
     return (
@@ -431,6 +449,7 @@ var Help = React.createClass({
   }
 });
 
+//logout page
 var LogOut = React.createClass({
   mixins: [Navigation],
   componentDidMount: function() {
@@ -449,6 +468,7 @@ var LogOut = React.createClass({
   }
 });
 
+//notfound page
 var NotFound = React.createClass({
   render: function () {
     return (
@@ -457,6 +477,8 @@ var NotFound = React.createClass({
   }
 });
 
+
+//The rooter, which handles all webpages
 var routes = (
   <Route name="app" handler={App} path="/">
     <DefaultRoute handler={Overview}/>

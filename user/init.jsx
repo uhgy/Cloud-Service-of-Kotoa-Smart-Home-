@@ -5,6 +5,8 @@ var NotFoundRoute = Router.NotFoundRoute;
 var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
+
+//keep cookie alive
 function createCookie(name,value,days) {
     if (days) {
         var date = new Date();
@@ -15,6 +17,7 @@ function createCookie(name,value,days) {
     document.cookie = name+"="+value+expires+"; path=/";
 }
 
+//read cookie
 function readCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -26,10 +29,13 @@ function readCookie(name) {
     return null;
 }
 
+//erase cookie
 function eraseCookie(name) {
     createCookie(name,"",-1);
 }
 
+
+//get and store data temporarilly, because there still exists some bugs in database related methods 
 var localDb = {
   rooms: [],
   nodes: [],
@@ -45,10 +51,15 @@ var localDb = {
   }
 };
 
- var baseurl = "https://stark-sea-8955.herokuapp.com";
-//var baseurl = "http://localhost:3000";
+
+//running environment, on a server or local
+
+//var baseurl = "https://stark-sea-8955.herokuapp.com";
+var baseurl = "http://localhost:3000";
 var accessToken = readCookie('remember_me');
 
+
+//login in post method 
 var postLogin = function (email, password) {
   return $.ajax({
     url: baseurl + "/login",
@@ -106,6 +117,7 @@ var addRooms = function (name) {
   });
 };
 
+//add Nodes
 var addNodes = function (name, type) {
   return $.ajax({
     url: baseurl + "/nodes",
