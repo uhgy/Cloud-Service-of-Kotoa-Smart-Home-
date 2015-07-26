@@ -1,5 +1,10 @@
 Cloud-Service-of-Kotoa-Smart-Home
 =============
+The cloud part of Kotoa Smart Home project. 
+
+node.js application
+
+Foundation + React + Jquery framework
 
 Build
 =============
@@ -8,6 +13,8 @@ Once you have the repositiry cloned , run the following code in console.
 npm install
 
 node static-server.js
+
+Then visit http://localhost:3000/user
 
 More...
 =============
