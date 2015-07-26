@@ -1,0 +1,24 @@
+{
+  "name": "cloud-service",
+  "version": "0.0.0",
+  "authors": [
+    "Henrik Juvonen <heolju@gmail.com>"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-icon-fonts": "*",
+    "foundation": "~5.5.1",
+    "react": "~0.12.2",
+    "react-router": "~0.12.4",
+    "lodash": "~3.4.0"
+  }
+}

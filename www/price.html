@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Price</title>
+    <meta name="description" content="" />
+    <meta name="author" content="KOTOA" />
+    <meta name="copyright" content="2015 KOTOA." />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <style type="text/css">
+		/* common */
+		.pull-left{
+		  float: left;
+		}
+		.pull-right{
+		  float: right;
+		}
+		.text-center{
+		  text-align: center;
+		}
+		.hide{
+		  display: none !important;
+		}
+		.list-unstyled{
+		  list-style: none;
+		  padding: 0;
+		  margin: 0;
+		}
+		.clearfix:after {
+		  content:".";
+		  display:block;
+		  height:0;
+		  visibility:hidden;
+		  clear:both;
+		}
+		/* end common */
+		body{
+		  font-family: 'WeblySleek UI', 'Segoe UI', "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", 'sans-serif';
+		  background: #ECF0F1;
+		}
+		#header,#footer{
+		  width: 100%;
+		  background: #151719; 
+		}
+		#header .content,#footer .content{
+		  width: 1080px;
+		  margin: 0 auto;
+		}
+		#header .nav-list li{
+		  float: left;
+		  display: block;
+		  height: 64px;
+		  line-height: 64px;
+		  padding: 0 24px;
+		  color: #fff;
+		  cursor: pointer;
+		}
+		#header .nav-list li:hover{
+		  background: #FF5711;
+		}
+		#footer {
+		  margin-top: 64px;
+		  color: #fff;
+		}
+		.container{
+		  width: 960px;
+		  min-height: 100px;
+		  padding: 36px;
+		  padding-bottom: 64px;
+		  margin: 30px auto 0;
+		  border-radius: 5px;
+		  background: #fff;
+		  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+		}
+		.items-wrap{
+		  width: 180px;
+		}
+		.items-wrap li{
+		  height: 44px;
+		  line-height: 44px;
+		  text-align: right;
+		}
+		.items-wrap li .title{
+		  margin-right: 18px;
+		  color: #888;
+		  font-size: 14px;
+		  border-bottom: 1px dashed #999;
+		}
+		.contents-wrap{
+		  width: 185px;
+		  border: 1px solid #b9b9b9;
+		  border-left: 0;
+		}
+		.contents-wrap li{
+		  background: #F4F4F4;
+		  color: #555;
+		  text-align: center;
+		}
+		.contents-wrap li:nth-child(even){
+		  background: #FBFBFB;
+		}
+		.panel header{
+		  height: 88px;
+		  line-height: 88px;
+		  text-align: center;
+		  background: #F4F4F4;
+		  font-size: 30px;
+		  border: 1px solid #b9b9b9;
+		  border-bottom: 0;
+		  border-left: 0;
+		}
+		.panel footer{
+		  height: 66px;
+		  line-height: 66px;
+		  text-align: center;
+		  background: #FBFBFB;
+		  border: 1px solid #b9b9b9;
+		  border-top: 0;
+		  border-left: 0;
+		  font-size: 20px;
+		  cursor: pointer;
+		}
+		.panel footer:hover{
+		  background: #FF5711;
+		  color: #fff;
+		}
+		.contact-wrap li{
+		  float: left;
+		  width: 50%;
+		  box-sizing: border-box;
+		  padding-top: 100px;
+		  margin-top: 24px;
+		  text-align: center;
+		  font-size: 30px;
+		}
+		.contact-wrap li:first-of-type{
+		  background: url('img/call-us.png') no-repeat center top;
+		  border-right: 1px solid rgba(255, 255, 255, 0.0976562);
+		}
+		.contact-wrap li:nth-child(2){
+		  background: url('img/email-us.png') no-repeat center top;
+		  border-left: 1px solid rgba(0, 0, 0, 0.347656);
+		}
+	  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="content">
+      <ul class="list-unstyled clearfix nav-list">
+        <li>SmartHome</li>
+        <li>Product</li>
+        <li>Customers</li>
+      </ul>
+    </div>
+  </header>
+  <section class="container clearfix">
+    <div class="pull-left panel" style="padding-top:90px; padding-bottom:68px; border-right: 1px solid #b9b9b9;">
+      <ul class="list-unstyled items-wrap">
+        <li><span class="title">Permitted Use</span></li>
+        <li><span class="title">Subscription Type</span></li>
+        <li><span class="title">Deploy to Device</span></li>
+        <li><span class="title">Unlimited App Size</span></li>
+        <li><span class="title">Deploy to Device</span></li>
+        <li><span class="title">Unlimited App Size</span></li>
+      </ul>
+    </div>
+    <div class="pull-left panel">
+      <header>FREE</header>
+      <ul class="list-unstyled items-wrap contents-wrap">
+        <li>Permitted</li>
+        <li>Type</li>
+        <li>Yes</li>
+        <li>No</li>
+        <li>Yes</li>
+        <li>No</li>
+      </ul>
+      <footer>subscribe</footer>
+    </div>
+    <div class="pull-left panel">
+      <header>$88.00</header>
+      <ul class="list-unstyled items-wrap contents-wrap">
+        <li>Permitted</li>
+        <li>Type</li>
+        <li>Yes</li>
+        <li>No</li>
+        <li>Yes</li>
+        <li>No</li>
+      </ul>
+      <footer>subscribe</footer>
+    </div>
+    <div class="pull-left panel">
+      <header>$88.00</header>
+      <ul class="list-unstyled items-wrap contents-wrap">
+        <li>Permitted</li>
+        <li>Type</li>
+        <li>Yes</li>
+        <li>No</li>
+        <li>Yes</li>
+        <li>No</li>
+      </ul>
+      <footer>subscribe</footer>
+    </div>
+    <div class="pull-left panel">
+      <header>$88.00</header>
+      <ul class="list-unstyled items-wrap contents-wrap">
+        <li>Permitted</li>
+        <li>Type</li>
+        <li>Yes</li>
+        <li>No</li>
+        <li>Yes</li>
+        <li>No</li>
+      </ul>
+      <footer>subscribe</footer>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="text-center">Have a question?</h2>
+    <ul class="list-unstyled clearfix contact-wrap">
+      <li>+358 45 8756363</li>
+      <li>henjuv@utu.fi</li>
+    </ul>
+  </section>
+  <section class="container">
+    <h2 class="text-center">Frequently Asked Questions</h2>
+    <h4>Can I continue to use Xamarin after my annual subscription expires?</h4>
+    <p>Yes. Your Xamarin license is perpetual. If you choose not to renew your subscription, you will no longer have access to new releases and support, and we will be very sad.</p>
+    <h4>Can I continue to use Xamarin after my monthly Indie subscription expires?</h4>
+    <p>No. Monthly Xamarin Indie subscriptions renew automatically each month. If you allow your subscription to expire, you will no longer be able to use Xamarin to build mobile apps. Your existing mobile apps will continue to work.</p>
+    <h4>How many developers do I need to add to my subscription?</h4>
+    <p>Each developer contributing code to a Xamarin app needs his or her own Xamarin account added to a subscription. You may purchase a different number of subscriptions per platform; for example, you could configure your Xamarin Business subscription to include 5 Xamarin.iOS developers and 10 Xamarin.Android developers.</p>
+    <h4>Does Xamarin offer volume pricing?</h4>
+    <p>Yes. Volume pricing is available when purchasing Xamarin for multiple platforms, or for multiple developers. These discounts are shown after choosing a subscription plan in our store.</p>
+    <h4>You used to offer annual Indie subscriptions for $299 a year. Do you still do that?</h4>
+    <p>Yes. Xamarin Indie may still be purchased as an annual subscription, which includes a perpetual software license. You can purchase an annual subscription of Xamarin Indie by toggling from “Monthly” to “Annually” in the Xamarin Store.</p>
+    <h4>How does buying additional licenses affect my renewal date?</h4>
+    <p>Licenses are synced across an account to give one renewal date. Each additional license purchase adds 365 days to an account. Renewal date is calculated as follows: renewal date = (total license days) / (# of licenses).</p>
+  </section>
+  <footer id="footer">
+    <div class="content">
+      <span>©2015 SMART HOME</span>
+      <span class="pull-right">Privacy Policy About Us Blog</span>
+    </div>
+  </footer>
+</body>
+</html>
