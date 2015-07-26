@@ -53,9 +53,9 @@ var localDb = {
 
 
 //running environment, on a server or local
-
-//var baseurl = "https://stark-sea-8955.herokuapp.com";
 var baseurl = "http://localhost:3000";
+//var baseurl = "https://stark-sea-8955.herokuapp.com";
+
 var accessToken = readCookie('remember_me');
 
 
